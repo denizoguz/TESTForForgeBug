@@ -4,26 +4,7 @@ modules:
       resource: main
       resolver:
         function: resolver
-      title: TEst for nav
-  #      sections:
-  #        - pages:
-  #            - title: Release Calendars
-  #              route: /release-calendars
-  #              icon: https://thestarware.com/images/calendar-regular.svg
-  #            - title: Subcomponents
-  #              route: /subcomponents
-  #              icon: https://thestarware.com/images/configuration-management-toolkit/list-tree.svg
-  #            - title: Component Versions
-  #              route: /component-versions
-  #              icon: https://thestarware.com/images/configuration-management-toolkit/code-fork.svg
-  #            - title: Bundles
-  #              route: /bundles
-  #              icon: https://thestarware.com/images/configuration-management-toolkit/cubes.svg
-  #        - header: " "
-  #          pages:
-  #            - title: Help
-  #              route: /help
-  #              icon: https://thestarware.com/images/square-question-regular.svg
+      title: TEST for Consent Screen
   function:
     - key: resolver
       handler: index.handler
@@ -44,13 +25,11 @@ permissions:
   scopes:
     - read:me
     - storage:app
-    - read:jira-user #get locale of user
-    - read:jira-work #to read components, versions
+    - read:jira-user
+    - read:jira-work
 
 resources:
   - key: main
     path: static/hello-world/build
 app:
   id: ari:cloud:ecosystem::app/31d32e7c-e3c3-4957-b8eb-864ecc9805b1
-
-#  id: ari:cloud:ecosystem::app/16ae460d-adc6-4763-84e5-691e39d1610a
